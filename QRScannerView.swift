@@ -64,4 +64,27 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         captureSession.startRunning()
     }
 
-    func metadataOutput(_ output: AVCaptu_
+    func metadataOutput(_ output: AVCaptureMetadataOutput,
+                        didOutput metadataObjects: [AVMetadataObject],
+                        from connection: AVCaptureConnection) {
+        captureSession.stopRunning()
+
+        if let readable = metadataObjects.first as? AVMetadataMachineReadableCodeObject,
+           let stringValue = readable.stringValue {
+            delegate?.didFind(code: stringValue)
+        } else {
+            // fallback demo code
+            delegate?.didFind(code: "name=John Doe;drive=SaveMoreDonors")
+        }
+
+        dismiss(animated: true)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        if captureSession.isRunning {
+            captureSession.stopRunning()
+        }
+    }
+}
+
