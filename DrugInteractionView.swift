@@ -2,23 +2,19 @@
 import SwiftUI
 
 struct DrugInteractionView: View {
-    let drugs = [
-        ("Abacavir", "Severe hypersensitivity", "High"),
-        ("Allopurinol", "Stevens-Johnson Syndrome", "Medium"),
-        ("Carbamazepine", "Skin rash", "Low")
-    ]
-
+    @State var drugInteractions: [DrugInteraction]
+    
     var body: some View {
-        List(drugs, id: \.0) { drug in
+        List($drugInteractions) { drugInteraction in
             HStack {
                 VStack(alignment: .leading) {
-                    Text(drug.0).bold()
-                    Text(drug.1).font(.subheadline)
+                    Text(drugInteraction.wrappedValue.name)
+                    Text(drugInteraction.wrappedValue.condition).font(.subheadline)
                 }
                 Spacer()
-                Text(drug.2)
+                Text(drugInteraction.wrappedValue.reactionLevel)
                     .padding(6)
-                    .background(severityColor(drug.2))
+                    .background(severityColor(drugInteraction.wrappedValue.reactionLevel))
                     .cornerRadius(8)
                     .foregroundColor(.white)
             }
@@ -33,4 +29,8 @@ struct DrugInteractionView: View {
             default: return .gray
         }
     }
+}
+
+#Preview {
+    DrugInteractionView(drugInteractions: [])
 }

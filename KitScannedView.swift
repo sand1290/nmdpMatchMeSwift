@@ -39,6 +39,6 @@ struct KitScannedView: View {
                 dict[String(keyValue[0])] = String(keyValue[1])
             }
         }
-        return (parts["name"] ?? "John Doe", parts["drive"] ?? "SaveMoreDonors")
+        return (parts["name"] ?? code, parts["drive"] ?? "SaveMoreDonors")
     }
 }

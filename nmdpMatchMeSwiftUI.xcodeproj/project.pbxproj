@@ -22,6 +22,14 @@
 		5A6A18902DEF8A250078E07D /* DrugInteractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6A18862DEF8A250078E07D /* DrugInteractionView.swift */; };
 		5A6A18912DEF8A250078E07D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6A18882DEF8A250078E07D /* LoginView.swift */; };
 		5A6A18922DEF8A250078E07D /* TiktokFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6A188B2DEF8A250078E07D /* TiktokFeedView.swift */; };
+		AA4455EF2DFD891500CC6C9F /* MapLibreSwiftDSL in Frameworks */ = {isa = PBXBuildFile; productRef = AA4455EE2DFD891500CC6C9F /* MapLibreSwiftDSL */; };
+		AA4455F12DFD891500CC6C9F /* MapLibreSwiftMacros in Frameworks */ = {isa = PBXBuildFile; productRef = AA4455F02DFD891500CC6C9F /* MapLibreSwiftMacros */; };
+		AA4455F32DFD891500CC6C9F /* MapLibreSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = AA4455F22DFD891500CC6C9F /* MapLibreSwiftUI */; };
+		AA4455F52DFD894400CC6C9F /* MapLibreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4455F42DFD893900CC6C9F /* MapLibreView.swift */; };
+		AA4A1ED92DFAE92B00DCC4E5 /* LocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4A1ED82DFAE92B00DCC4E5 /* LocationDataManager.swift */; };
+		AA5D4B322E0273EE007236A4 /* KitReceivedConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D4B312E0273DE007236A4 /* KitReceivedConfirmationView.swift */; };
+		AA5EE1702DFEE20900642894 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EE16F2DFEE20300642894 /* AppDelegate.swift */; };
+		AA5EE1742DFF37B100642894 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EE1732DFF37AC00642894 /* RootTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,13 +70,30 @@
 		5A6A18892DEF8A250078E07D /* MatchLikelihoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchLikelihoodView.swift; sourceTree = "<group>"; };
 		5A6A188A2DEF8A250078E07D /* NmdpMatchMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NmdpMatchMeApp.swift; sourceTree = "<group>"; };
 		5A6A188B2DEF8A250078E07D /* TiktokFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiktokFeedView.swift; sourceTree = "<group>"; };
+		AA4455F42DFD893900CC6C9F /* MapLibreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLibreView.swift; sourceTree = "<group>"; };
+		AA4A1ED82DFAE92B00DCC4E5 /* LocationDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataManager.swift; sourceTree = "<group>"; };
+		AA5D4B312E0273DE007236A4 /* KitReceivedConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitReceivedConfirmationView.swift; sourceTree = "<group>"; };
+		AA5EE16C2DFED39D00642894 /* nmdpMatchMeSwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = nmdpMatchMeSwiftUI.entitlements; sourceTree = "<group>"; };
+		AA5EE16F2DFEE20300642894 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA5EE1732DFF37AC00642894 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		AA5EE1772E0080E500642894 /* restapi */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = restapi;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5A6A18292DEF82D40078E07D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA4455F32DFD891500CC6C9F /* MapLibreSwiftUI in Frameworks */,
+				AA4455EF2DFD891500CC6C9F /* MapLibreSwiftDSL in Frameworks */,
+				AA4455F12DFD891500CC6C9F /* MapLibreSwiftMacros in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,11 +117,19 @@
 		5A6A18232DEF82D40078E07D = {
 			isa = PBXGroup;
 			children = (
+				AA5EE1772E0080E500642894 /* restapi */,
+				AA5EE1732DFF37AC00642894 /* RootTabView.swift */,
+				AA5EE16F2DFEE20300642894 /* AppDelegate.swift */,
+				AA5EE16C2DFED39D00642894 /* nmdpMatchMeSwiftUI.entitlements */,
+				AA4455F42DFD893900CC6C9F /* MapLibreView.swift */,
 				5A45CB282DF0BE2D004F75CF /* nmdpMatchMeSwiftUI-Info.plist */,
+				5A6A188A2DEF8A250078E07D /* NmdpMatchMeApp.swift */,
+				AA4A1ED82DFAE92B00DCC4E5 /* LocationDataManager.swift */,
 				5A45CB262DF0BA07004F75CF /* KitScannedView.swift */,
 				5A45CB242DF0B9ED004F75CF /* QRScannerView.swift */,
 				5A45CB182DF0AA3B004F75CF /* NotNowView.swift */,
 				5A45CB162DF0A7A3004F75CF /* MatchConfirmationView.swift */,
+				AA5D4B312E0273DE007236A4 /* KitReceivedConfirmationView.swift */,
 				5A45CB122DF09B00004F75CF /* MatchAlertView.swift */,
 				5A6A18852DEF8A250078E07D /* AiChatView.swift */,
 				5A6A18862DEF8A250078E07D /* DrugInteractionView.swift */,
@@ -104,7 +137,6 @@
 				5A6A18882DEF8A250078E07D /* LoginView.swift */,
 				5A6A18892DEF8A250078E07D /* MatchLikelihoodView.swift */,
 				5A45CB0C2DF09495004F75CF /* ShippingAddressView.swift */,
-				5A6A188A2DEF8A250078E07D /* NmdpMatchMeApp.swift */,
 				5A6A188B2DEF8A250078E07D /* TiktokFeedView.swift */,
 				5A6A182D2DEF82D40078E07D /* Products */,
 				5A6A186F2DEF837B0078E07D /* nmdpMatchMeSwiftUI-Bridging-Header.h */,
@@ -138,8 +170,14 @@
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				AA5EE1772E0080E500642894 /* restapi */,
+			);
 			name = nmdpMatchMeSwiftUI;
 			packageProductDependencies = (
+				AA4455EE2DFD891500CC6C9F /* MapLibreSwiftDSL */,
+				AA4455F02DFD891500CC6C9F /* MapLibreSwiftMacros */,
+				AA4455F22DFD891500CC6C9F /* MapLibreSwiftUI */,
 			);
 			productName = nmdpMatchMeSwiftUI;
 			productReference = 5A6A182C2DEF82D40078E07D /* nmdpMatchMeSwiftUI.app */;
@@ -193,7 +231,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1640;
-				LastUpgradeCheck = 1640;
+				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					5A6A182B2DEF82D40078E07D = {
 						CreatedOnToolsVersion = 16.4;
@@ -220,6 +258,9 @@
 			);
 			mainGroup = 5A6A18232DEF82D40078E07D;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AA4455ED2DFD891500CC6C9F /* XCLocalSwiftPackageReference "../swiftui-dsl" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5A6A182D2DEF82D40078E07D /* Products */;
 			projectDirPath = "";
@@ -265,6 +306,9 @@
 				5A45CB132DF09B16004F75CF /* MatchAlertView.swift in Sources */,
 				5A6A188D2DEF8A250078E07D /* HlaResultView.swift in Sources */,
 				5A6A188E2DEF8A250078E07D /* MatchLikelihoodView.swift in Sources */,
+				AA5EE1742DFF37B100642894 /* RootTabView.swift in Sources */,
+				AA4455F52DFD894400CC6C9F /* MapLibreView.swift in Sources */,
+				AA4A1ED92DFAE92B00DCC4E5 /* LocationDataManager.swift in Sources */,
 				5A6A188F2DEF8A250078E07D /* NmdpMatchMeApp.swift in Sources */,
 				5A6A18902DEF8A250078E07D /* DrugInteractionView.swift in Sources */,
 				5A45CB172DF0A7A3004F75CF /* MatchConfirmationView.swift in Sources */,
@@ -274,6 +318,8 @@
 				5A6A18922DEF8A250078E07D /* TiktokFeedView.swift in Sources */,
 				5A45CB252DF0B9ED004F75CF /* QRScannerView.swift in Sources */,
 				5A45CB0D2DF09495004F75CF /* ShippingAddressView.swift in Sources */,
+				AA5D4B322E0273EE007236A4 /* KitReceivedConfirmationView.swift in Sources */,
+				AA5EE1702DFEE20900642894 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,12 +407,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -418,11 +465,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -434,9 +482,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = nmdpMatchMeSwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LMW3S3LWP4;
+				DEVELOPMENT_TEAM = B925LZ9V24;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "nmdpMatchMeSwiftUI-Info.plist";
@@ -444,17 +493,19 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Access the camera for photos videos and qr code scans";
 				INFOPLIST_KEY_NSLocationUsageDescription = "Access location of user to determine drive association";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need access to location in order to locate stuff";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nmdpMatchMeSwiftUI.nmdpMatchMeSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackathon2025.nmdpMatchMeSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "nmdpMatchMeSwiftUI-Bridging-Header.h";
@@ -470,9 +521,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = nmdpMatchMeSwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LMW3S3LWP4;
+				DEVELOPMENT_TEAM = B925LZ9V24;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "nmdpMatchMeSwiftUI-Info.plist";
@@ -480,17 +532,19 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Access the camera for photos videos and qr code scans";
 				INFOPLIST_KEY_NSLocationUsageDescription = "Access location of user to determine drive association";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need access to location in order to locate stuff";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nmdpMatchMeSwiftUI.nmdpMatchMeSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackathon2025.nmdpMatchMeSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "nmdpMatchMeSwiftUI-Bridging-Header.h";
@@ -617,6 +671,28 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		AA4455ED2DFD891500CC6C9F /* XCLocalSwiftPackageReference "../swiftui-dsl" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../swiftui-dsl";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA4455EE2DFD891500CC6C9F /* MapLibreSwiftDSL */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MapLibreSwiftDSL;
+		};
+		AA4455F02DFD891500CC6C9F /* MapLibreSwiftMacros */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MapLibreSwiftMacros;
+		};
+		AA4455F22DFD891500CC6C9F /* MapLibreSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MapLibreSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5A6A18242DEF82D40078E07D /* Project object */;
 }

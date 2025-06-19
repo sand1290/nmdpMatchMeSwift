@@ -29,3 +29,7 @@ struct ShippingAddressView: View {
         .navigationTitle("Enter Address")
     }
 }
+
+#Preview {
+    ShippingAddressView()
+}

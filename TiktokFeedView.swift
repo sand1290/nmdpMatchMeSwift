@@ -31,3 +31,7 @@ struct WebView: UIViewRepresentable {
         uiView.load(URLRequest(url: url))
     }
 }
+
+#Preview {
+    TiktokFeedView()
+}
