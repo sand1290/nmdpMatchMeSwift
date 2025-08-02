@@ -22,14 +22,14 @@
 		5A6A18902DEF8A250078E07D /* DrugInteractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6A18862DEF8A250078E07D /* DrugInteractionView.swift */; };
 		5A6A18912DEF8A250078E07D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6A18882DEF8A250078E07D /* LoginView.swift */; };
 		5A6A18922DEF8A250078E07D /* TiktokFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6A188B2DEF8A250078E07D /* TiktokFeedView.swift */; };
-		AA4455EF2DFD891500CC6C9F /* MapLibreSwiftDSL in Frameworks */ = {isa = PBXBuildFile; productRef = AA4455EE2DFD891500CC6C9F /* MapLibreSwiftDSL */; };
-		AA4455F12DFD891500CC6C9F /* MapLibreSwiftMacros in Frameworks */ = {isa = PBXBuildFile; productRef = AA4455F02DFD891500CC6C9F /* MapLibreSwiftMacros */; };
-		AA4455F32DFD891500CC6C9F /* MapLibreSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = AA4455F22DFD891500CC6C9F /* MapLibreSwiftUI */; };
-		AA4455F52DFD894400CC6C9F /* MapLibreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4455F42DFD893900CC6C9F /* MapLibreView.swift */; };
+		AA0BDF372E08B1F4001F434D /* TestMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0BDF362E08B1F4001F434D /* TestMap.swift */; };
 		AA4A1ED92DFAE92B00DCC4E5 /* LocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4A1ED82DFAE92B00DCC4E5 /* LocationDataManager.swift */; };
 		AA5D4B322E0273EE007236A4 /* KitReceivedConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D4B312E0273DE007236A4 /* KitReceivedConfirmationView.swift */; };
 		AA5EE1702DFEE20900642894 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EE16F2DFEE20300642894 /* AppDelegate.swift */; };
 		AA5EE1742DFF37B100642894 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EE1732DFF37AC00642894 /* RootTabView.swift */; };
+		AAA6DABE2E1B61D200911E7B /* MatchMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA6DABD2E1B61D200911E7B /* MatchMap.swift */; };
+		AAFE25A12E08E51B002CA35F /* TestAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE25A02E08E51B002CA35F /* TestAnimation.swift */; };
+		AAFE25A32E0A1026002CA35F /* AnnotationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE25A22E0A1026002CA35F /* AnnotationTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,12 +70,15 @@
 		5A6A18892DEF8A250078E07D /* MatchLikelihoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchLikelihoodView.swift; sourceTree = "<group>"; };
 		5A6A188A2DEF8A250078E07D /* NmdpMatchMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NmdpMatchMeApp.swift; sourceTree = "<group>"; };
 		5A6A188B2DEF8A250078E07D /* TiktokFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiktokFeedView.swift; sourceTree = "<group>"; };
-		AA4455F42DFD893900CC6C9F /* MapLibreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLibreView.swift; sourceTree = "<group>"; };
+		AA0BDF362E08B1F4001F434D /* TestMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMap.swift; sourceTree = "<group>"; };
 		AA4A1ED82DFAE92B00DCC4E5 /* LocationDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataManager.swift; sourceTree = "<group>"; };
 		AA5D4B312E0273DE007236A4 /* KitReceivedConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitReceivedConfirmationView.swift; sourceTree = "<group>"; };
 		AA5EE16C2DFED39D00642894 /* nmdpMatchMeSwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = nmdpMatchMeSwiftUI.entitlements; sourceTree = "<group>"; };
 		AA5EE16F2DFEE20300642894 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA5EE1732DFF37AC00642894 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		AAA6DABD2E1B61D200911E7B /* MatchMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchMap.swift; sourceTree = "<group>"; };
+		AAFE25A02E08E51B002CA35F /* TestAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAnimation.swift; sourceTree = "<group>"; };
+		AAFE25A22E0A1026002CA35F /* AnnotationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -91,9 +94,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA4455F32DFD891500CC6C9F /* MapLibreSwiftUI in Frameworks */,
-				AA4455EF2DFD891500CC6C9F /* MapLibreSwiftDSL in Frameworks */,
-				AA4455F12DFD891500CC6C9F /* MapLibreSwiftMacros in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,11 +117,14 @@
 		5A6A18232DEF82D40078E07D = {
 			isa = PBXGroup;
 			children = (
+				AAA6DABD2E1B61D200911E7B /* MatchMap.swift */,
+				AAFE25A22E0A1026002CA35F /* AnnotationTest.swift */,
+				AAFE25A02E08E51B002CA35F /* TestAnimation.swift */,
+				AA0BDF362E08B1F4001F434D /* TestMap.swift */,
 				AA5EE1772E0080E500642894 /* restapi */,
 				AA5EE1732DFF37AC00642894 /* RootTabView.swift */,
 				AA5EE16F2DFEE20300642894 /* AppDelegate.swift */,
 				AA5EE16C2DFED39D00642894 /* nmdpMatchMeSwiftUI.entitlements */,
-				AA4455F42DFD893900CC6C9F /* MapLibreView.swift */,
 				5A45CB282DF0BE2D004F75CF /* nmdpMatchMeSwiftUI-Info.plist */,
 				5A6A188A2DEF8A250078E07D /* NmdpMatchMeApp.swift */,
 				AA4A1ED82DFAE92B00DCC4E5 /* LocationDataManager.swift */,
@@ -302,12 +305,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAFE25A12E08E51B002CA35F /* TestAnimation.swift in Sources */,
+				AA0BDF372E08B1F4001F434D /* TestMap.swift in Sources */,
 				5A6A188C2DEF8A250078E07D /* AiChatView.swift in Sources */,
 				5A45CB132DF09B16004F75CF /* MatchAlertView.swift in Sources */,
 				5A6A188D2DEF8A250078E07D /* HlaResultView.swift in Sources */,
 				5A6A188E2DEF8A250078E07D /* MatchLikelihoodView.swift in Sources */,
 				AA5EE1742DFF37B100642894 /* RootTabView.swift in Sources */,
-				AA4455F52DFD894400CC6C9F /* MapLibreView.swift in Sources */,
 				AA4A1ED92DFAE92B00DCC4E5 /* LocationDataManager.swift in Sources */,
 				5A6A188F2DEF8A250078E07D /* NmdpMatchMeApp.swift in Sources */,
 				5A6A18902DEF8A250078E07D /* DrugInteractionView.swift in Sources */,
@@ -315,8 +319,10 @@
 				5A6A18912DEF8A250078E07D /* LoginView.swift in Sources */,
 				5A45CB272DF0BA07004F75CF /* KitScannedView.swift in Sources */,
 				5A45CB192DF0AA3B004F75CF /* NotNowView.swift in Sources */,
+				AAFE25A32E0A1026002CA35F /* AnnotationTest.swift in Sources */,
 				5A6A18922DEF8A250078E07D /* TiktokFeedView.swift in Sources */,
 				5A45CB252DF0B9ED004F75CF /* QRScannerView.swift in Sources */,
+				AAA6DABE2E1B61D200911E7B /* MatchMap.swift in Sources */,
 				5A45CB0D2DF09495004F75CF /* ShippingAddressView.swift in Sources */,
 				AA5D4B322E0273EE007236A4 /* KitReceivedConfirmationView.swift in Sources */,
 				AA5EE1702DFEE20900642894 /* AppDelegate.swift in Sources */,
@@ -499,7 +505,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -538,7 +544,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

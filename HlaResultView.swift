@@ -26,7 +26,7 @@ struct HlaResultView: View {
                 NavigationLink("Drug Reactions", destination: DrugInteractionView(drugInteractions: hlaResult.drugInteractions))
                 NavigationLink("Ask AI", destination: AiChatView())
                 
-                NavigationLink("Map", destination: MapLibreView())
+                NavigationLink("Map", destination: MatchMap())
                 Spacer()
             }
             .padding()
@@ -40,7 +40,7 @@ struct HlaResultView: View {
     
     func fetchHlaResults() {
         let apiService = APIService()
-        apiService.fetchHlaResults(from: "/donor/hla/" + appDelegate.deviceTokenString) { hlaResult in
+        apiService.fetchHlaResults(for: appDelegate.deviceTokenString) { hlaResult in
             DispatchQueue.main.async {
                 self.hlaResult = hlaResult ?? HlaResult(id: UUID(), hlaType: "", commonAncestry: "", matchProbability: "0", drugInteractions: [])
                 self.isLoading = false

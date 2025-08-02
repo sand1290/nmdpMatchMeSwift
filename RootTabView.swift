@@ -21,7 +21,7 @@ struct RootTabView: View {
             NavigationView { AiChatView() }
                 .tabItem { Label("Ask AI", systemImage: "brain.head.profile") }
             
-            NavigationView { MapLibreView() }
+            NavigationView { MatchMap() }
                 .tabItem { Label("Map", systemImage: "map")}
             
             NavigationView { HlaResultView() }

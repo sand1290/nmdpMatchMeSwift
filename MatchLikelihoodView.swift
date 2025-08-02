@@ -62,11 +62,6 @@ struct MatchLikelihoodView: View {
                     }
                 }
             }
-//            .onAppear {
-//                DispatchQueue.main.asyncAfter(deadline: .now() + 30) {
-//                    showMatchAlert = true
-//                }
-//            }
             .navigationDestination(isPresented: $navigateToConfirmation) {
                 MatchConfirmationView()
             }
